@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@100;200;300;400;500;600;700;800;900&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Urbanist;
+  font-weight: 500;
+}
+html,body{
+  height: 100%;
+  width: 100%;
+}
+#main{
+  overflow: hidden;
+  background-color: #dadada;
+}
+#page1{
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+}
+#page1 nav{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0rem 5rem;
+  height: 6rem;
+  width: 100%;
+}
+#brand{
+  font-size: 2.4rem;
+  font-weight: 800;
+}
+#page1 nav ul{
+  display: flex;
+  gap: 2rem;
+}
+#page1 nav ul li{
+  display: block;
+}
+#page1 nav ul li a{
+  text-decoration: none;
+  color: #000;
+  white-space: nowrap;
+}
+#register-btn{
+  display: flex;
+  align-items: center;
+}
+#register-btn button{
+  padding: .8rem 2rem;
+  border: 1px solid #000;
+  border-radius: 3rem;
+  background-color: #dadada;
+  font-weight: 700;
+}
+#portfolio-content{
+  height: calc(100vh - 6rem);
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  padding: 0rem 8rem;
+}
+#left-content{
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+#right-content{
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: right;
+  align-items: center;
+}
+#port-img{
+  height: 100%;
+  width: auto;
+  border-radius: 200px;
+  box-shadow: 0px 5px 10px rgba(0,0,0,0.1);
+  padding: 2rem;
+}
+#border-image{
+  height: 80%;
+  width: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #000;
+  border-radius: 200px;
+  box-shadow: 0px 5px 10px rgba(0,0,0,0.1);
+}
+#top-paragraph{
+  display: flex;
+  align-items: center;
+}
+#top-paragraph #top-vertical-line{
+  height: 2px;
+  width: 50px;
+  background-color: black;
+  margin-right: 1rem;
+}
+#main-paragraph h1{
+  font-weight: 900;
+  font-size: 5rem;
+  line-height: 5rem;
+  padding: 1.5rem 0rem;
+}
+#bottom-paragraph p{
+  font-size: 1rem;
+  padding: 1rem 0rem;
+  line-height: 2rem;
+}
+#bottom-buttons{
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+#bottom-buttons #button-1 button{
+  padding: 1rem 2rem;
+  border-radius: 50px;
+  background-color: #000;
+  border: none;
+  color: #fff;
+  font-weight: 800;
+  font-size: 1.2rem;
+}
+#bottom-buttons #button-2{
+  display: flex;
+  align-items: center;
+  
+}
+#bottom-buttons #button-2 span{
+  white-space: nowrap;
+  padding: 0rem 1rem;
+  font-weight: 800;
+}
+#bottom-buttons #button-2 button{
+  padding: .8rem 1rem;
+  border-radius: 50px;
+  background-color: #000;
+  border: none;
+  color: #fff;
+  font-weight: 800;
+  font-size: 1.2rem;
+}
+#bottom-buttons #button-2 button i{
+  font-size: 2rem;
+}
+#register-btn i{
+  font-size: 2rem;
+  padding-left: 1rem;
+  display: none;
+}
+@media (max-width:1300px){
+  html{
+    font-size: 84.5%;
+  }
+  #border-image{
+  height: 40vh;
+  width: auto;
+}
+}
+@media (max-width:940px){
+  html{
+    font-size: 64.5%;
+  }
+  #page1 nav{
+    padding: 0rem 2rem;
+  }
+  #page1 nav ul{
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    display: block;
+    top: 6rem;
+    left: 100%;
+    padding-top: 10rem;
+    background-color: #dadada;
+    transition: all .6s ease-in-out;
+  }
+  #page1 nav ul li{
+    margin: 2rem;
+  }
+  #page1 nav ul li a{
+    font-size: 4rem;
+    font-weight: 800;
+  }
+  #border-image{
+  height: 40vh;
+  width: auto;
+}
+#portfolio-content{
+  flex-direction: column;
+  padding: 0rem 2rem;
+}
+#right-content{
+  order: 1;
+}
+#left-content{
+  order: 2;
+}
+#right-content{
+  justify-content: center;
+}
+#register-btn i{
+  display: block;
+}
+}
